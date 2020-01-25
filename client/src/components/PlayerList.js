@@ -1,9 +1,8 @@
 import React from 'react';
 import PlayerCard from './PlayerCard';
-import useDarkMode from '../DarkMode/useDarkMode';
 import styled from 'styled-components';
 
-const appStyling = styled.div  
+const AppStyling = styled.div  
 `
 width: 90px;
 height: 90px;
@@ -23,7 +22,6 @@ const PlayerList = ({ players }) => {
                 <PlayerCard key={player.id} player ={player} />
             ))}
             
-
         </div>
         
 
