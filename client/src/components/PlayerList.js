@@ -13,18 +13,11 @@ background: #c21807;
 
 const PlayerList = ({ players }) => {
     
-    const [darkMode, setDarkMode] =useDarkMode(false);
-    const toggleMode = e => {
-        e.preventDefault();
-        setDarkMode(!darkMode);
-    };
+    
     return (
         <>
         
         <div>
-            
-            <button onClick={toggleMode}>Dark Mode</button>
-            
 
             {players.map(player => (
                 <PlayerCard key={player.id} player ={player} />
